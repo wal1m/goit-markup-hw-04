@@ -126,6 +126,7 @@ body {
  }
  .header-address-list-item:hover,
  .header-address-list-item:focus {
+     color: var(--accent-color);
      fill: var(--accent-color);
  }
 
@@ -182,22 +183,31 @@ padding-top: 200px;
 color: #FFFFFF;
  }
 
+ .btn {
+   font-style: normal;
+   font-weight: 700;  
+   font-family: var(--main-font);
+   font-size: 16px;
+   line-height: 1.88;
+   background-color: var(--accent-color);
+   letter-spacing: 0.06em;
+   color: #FFFFFF;
+   border: none;
+   border-radius: 4px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ }
  .hero-btn {
  display: inline-block;
- font-family: var(--main-font);
- font-style: normal;
- font-weight: bold;
- font-size: 16px;
- line-height: 1.88;
- background: #2196F3;
-letter-spacing: 0.06em;
-color: #FFFFFF;
 padding-top: 10px;
 padding-right: 32px;
 padding-bottom: 10px;
 padding-left: 32px;
-border-radius: 4px;
-/* margin-bottom: 200px; */
+
+ }
+ .hero-btn:hover,
+ .hero-btn:focus {
+     background: #188CE8;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
  }
 
  /* about-us */
@@ -212,6 +222,22 @@ border-radius: 4px;
 .about-us-title {
     margin-bottom: 10px;
 }
+.about-us-list-item-blok {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.about-us-list-item-svg {
+    /* display: inline-flex; */
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
 .about-us-list-item:not(:last-child){
     margin-right: 30px;
 }
@@ -281,6 +307,10 @@ letter-spacing: 0.03em;
 .team-list-item {
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px
+     rgba(0, 0, 0, 0.2), 0px 1px 1px
+     rgba(0, 0, 0, 0.14), 0px 1px 3px
+     rgba(0, 0, 0, 0.12);
 }
 .team-list-item:not(:last-child) {
     margin-right: 30px;
@@ -312,15 +342,34 @@ margin-bottom: 16px;
 .social-list-link {
     display: flex;
     justify-content: center;
+    padding-bottom: 24px;
     }
 .social-list-item {
     display: flex;
     }
 .social-list-item-link {
     display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+    background-color: var(--accent-color);
 }
 .social-list-item:not(:last-child) {
     margin-right: 10px;
+}
+.social-list-item-svg {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+.social-list-item-svg:hover,
+.social-list-item-svg:focus {
+    fill: #FFFFFF;
 }
 
 /* regular customers */
@@ -336,7 +385,6 @@ margin-bottom: 16px;
     
 }
 .clients-list-item {
-    display: flex;
 }
 
 .clients-list-item-link {
@@ -347,9 +395,19 @@ margin-bottom: 16px;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-
- 
 }
+.clients-list-item-svg {
+    fill: #AFB1B8;
+}
+.clients-list-item-svg:hover,
+.clients-list-item-svg:focus {
+    fill: var(--accent-color);
+}
+.clients-list-item-link:hover,
+.clients-list-item-link:focus {
+border-color: var(--accent-color);
+}
+    
 
 
 /* footer */
@@ -385,10 +443,18 @@ color: var(--footer-text);
 .footer-social-list-link {
     display: flex;
     justify-content: center;
-
-    background-color: cyan;
+}
+.footer-social-list-link .social-list-item-link {
+    background: rgba(255, 255, 255, 0.1);
 }
 
+.footer-social-list-link .social-list-item-svg {
+    fill: #FFFFFF;
+}
+.footer-social-list-link .social-list-item-link:hover,
+.footer-social-list-link .social-list-item-link:focus {
+    background-color:  var(--accent-color);
+}
 .social-link-item:not(:last-child) {
     margin-right: 10px;
 }
@@ -411,8 +477,9 @@ color: var(--accent-color);
 .social-link-item {
 }
 
-.footer-join {
-    display: flex;
+.footer-join,
+.footer-forma {
+    display: block;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -421,6 +488,25 @@ text-transform: uppercase;
 color: var(--footer-text);
 margin-bottom: 20px;
 }
+.footer-forma-btn {
+    display: flex;
+}
+.footer-btn {
+display: flex;
+align-items: center;
+text-align: center;
+padding-top: 10px;
+padding-right: 28px;
+padding-bottom: 10px;
+padding-left: 29px;
+}
+.footer-send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: #FFFFFF;
+}
+
 /* portfolio */
 .filter-list {
     display: flex;
