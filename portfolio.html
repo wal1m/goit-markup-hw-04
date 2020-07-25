@@ -27,10 +27,18 @@
                 <address class="header-address">
                     <ul class="header-address-list list">
                         <li class="header-address-list-item"><a class="header-address-list-link link"
-                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="header-address-list-item"><a class="header-address-list-link link"
-                                href="tel:+380961111111">+38 096 111
-                                11 11</a></li>
+                                href="mailto:info@devstudio.com">
+                                <svg class="header-address-list-link-svg">
+                                    <use href="./images/sprite.svg#mail">
+                                    </use>
+                                </svg>
+                                info@devstudio.com</a></li>
+                        <li class="header-address-list-item"><a class="header-address-list-link link" href="tel:+380961111111">
+                                <svg class="header-address-list-link-svg tel">
+                                    <use href="./images/sprite.svg#tel">
+                                    </use>
+                                </svg>
+                                +38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
@@ -170,28 +178,56 @@
                             </div>
                             <div class="footer-block-join">
                                 <b class="footer-join">присоединяйтесь</b>
-                                <ul class="footer-social-list-link list">
-                                    <li class="social-link-item">
-                                        <a class="link" href="" aria-label="иконка инстаграма">и</a>
+                                <ul class="footer-social-list-link">
+                                    <li class="social-list-item">
+                                        <a class="social-list-item-link link" href="" aria-label="иконка инстаграма">
+                                            <svg class="social-list-item-svg">
+                                                <use href="./images/sprite.svg#instagram">
+                                                </use>
+                                            </svg>
+                                        </a>
                                     </li>
-                                    <li class="social-link-item">
-                                        <a class="link" href="" aria-label="иконка твитера">т</a>
+                                    <li class="social-list-item">
+                                        <a class="social-list-item-link link" href="" aria-label="иконка твитера">
+                                            <svg class="social-list-item-svg">
+                                                <use href="./images/sprite.svg#twitter">
+                                                </use>
+                                            </svg>
+                                        </a>
                                     </li>
-                                    <li class="social-link-item">
-                                        <a class="link" href="" aria-label="иконка фейсбука">ф</a>
+                                    <li class="social-list-item">
+                                        <a class="social-list-item-link link" href="" aria-label="иконка фейсбука">
+                                            <svg class="social-list-item-svg">
+                                                <use href="./images/sprite.svg#facebook">
+                                                </use>
+                                            </svg>
+                                        </a>
                                     </li>
-                                    <li class="social-link-item">
-                                        <a class="link" href="" aria-label="иконка ликедина">л</a>
+                                    <li class="social-list-item">
+                                        <a class="social-list-item-link link" href="" aria-label="иконка ликедина">
+                                            <svg class="social-list-item-svg">
+                                                <use href="./images/sprite.svg#linkedin">
+                                                </use>
+                                            </svg>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
                             <!-- Форма -->
-                            <div class="footer-forma">
-                                <b>Подпишитесь на рассылку</b>
-                                <p><input name="E-mail" placeholder="E-mail"></p>
-                                <button>Подписаться <img src="./images/icon-send.svg" alt="самолетик"></button>
+                            <div class="footer-block-forma">
+                                <b class="footer-forma">Подпишитесь на рассылку
+                                </b>
+                    
+                                <div class="footer-forma-btn">
+                                    <p><input name="E-mail" placeholder="E-mail"></p>
+                                    <button class="footer-btn btn"> Подписаться
+                                        <svg class="footer-send">
+                                            <use href="./images/sprite.svg#icon-send">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
                     </footer>
 </body>
 </html>
