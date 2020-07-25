@@ -354,6 +354,7 @@ margin-bottom: 16px;
     display: flex;
     width: 44px;
     height: 44px;
+    color: #AFB1B8;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -361,6 +362,7 @@ margin-bottom: 16px;
 .social-list-item-link:hover,
 .social-list-item-link:focus {
     background-color: var(--accent-color);
+    color: #ffffff;
 }
 .social-list-item:not(:last-child) {
     margin-right: 10px;
@@ -368,11 +370,7 @@ margin-bottom: 16px;
 .social-list-item-svg {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
-}
-.social-list-item-svg:hover,
-.social-list-item-svg:focus {
-    fill: #FFFFFF;
+    fill: currentColor;
 }
 
 /* regular customers */
@@ -396,19 +394,20 @@ margin-bottom: 16px;
     height: 90px;
     justify-content: center;
     align-items: center;
+    color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 .clients-list-item-svg {
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 .clients-list-item-svg:hover,
 .clients-list-item-svg:focus {
-    fill: var(--accent-color);
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
 border-color: var(--accent-color);
+color: var(--accent-color);
 }
     
 
